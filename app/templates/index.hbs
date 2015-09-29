@@ -1,0 +1,11 @@
+<div class="well">
+We hope you find exactly what you're looking for.
+</div>
+<ul class="fa-ul">
+  {{#each model as |category|}}
+    {{category-tile category=category update="update"}}
+  {{/each}}
+</ul>
+
+{{new-category save2="save3"}}
+<br />

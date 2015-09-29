@@ -1,0 +1,28 @@
+{ "categories":[{
+    "catName": "Housing"
+  }, {
+    "catName": "Jobs"
+  }, {
+    "catName": "for sale"
+  }],
+
+  "subcats": [{
+      "subcatName": "Apartments"
+    }, {
+      "subcatName": "Rooms shared"
+    }, {
+      "subcatName": "House shared"
+    }, {
+      "subcatName": "Web Development"
+    }, {
+      "subcatName": "Transport"
+    }, {
+      "subcatName": "Sales"
+    }, {
+      "subcatName": "Furniture"
+    }, {
+      "subcatName": "Cars"
+    }, {
+      "subcatName": "Boats"
+    }]
+}
