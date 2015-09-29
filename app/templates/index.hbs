@@ -1,11 +1,24 @@
-<div class="well">
-We hope you find exactly what you're looking for.
+<!-- <div class="well">
+We hope you find what you're looking for.
+</div> -->
+
+<div class="container">
+  <div class="row">
+    {{#each model as |category|}}
+      {{category-tile category=category update="update" destroyCategory="destroyCategory"}}
+    {{/each}}
+  </div>
 </div>
-<ul class="fa-ul">
+
+<!-- {{post-modal post=model.firstObject}} -->
+
+{{outlet}}
+
+<!-- <ul class="fa-ul">
   {{#each model as |category|}}
-    {{category-tile category=category update="update"}}
+    {{category-tile category=category update="update" destroyCategory="destroyCategory"}}
   {{/each}}
-</ul>
+</ul> -->
 
 {{new-category save2="save3"}}
 <br />

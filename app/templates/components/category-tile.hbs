@@ -1,5 +1,16 @@
-<li>{{category.catName}}
+<div class="col-xs-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><b>{{category.catName}}</b>
+      {{update-category category=category update="update"}}
+      <a {{action 'delete' category}}><i class="fa fa-trash-o text-danger"></i></a></div>
+    <div class="panel-body">
+      list subcats
+    </div>
+  </div>
+</div>
+<!-- <li>{{category.catName}}
 
   {{update-category category=category update="update"}}
+  <a {{action 'delete' category}}><i class="fa fa-trash-o"></i></a>
 
-</li>
+</li> -->
