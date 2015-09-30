@@ -4,13 +4,12 @@
       {{update-category category=category update="update"}}
       <a {{action 'delete' category}}><i class="fa fa-trash-o text-danger"></i></a></div>
     <div class="panel-body">
-      list subcats
+      <ul class="list-group">
+        {{#each category.subcats as |subcat|}}
+          {{subcat-tile subcat=subcat subcatUpdate="subcatUpdate" destroySubcat="destroySubcat"}}
+        {{/each}}
+        {{new-subcat saveSubcat="saveSubcat" category=category}}
+      </ul>
     </div>
   </div>
 </div>
-<!-- <li>{{category.catName}}
-
-  {{update-category category=category update="update"}}
-  <a {{action 'delete' category}}><i class="fa fa-trash-o"></i></a>
-
-</li> -->

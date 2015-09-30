@@ -1,0 +1,14 @@
+{{#if subcatFormShowing}}
+<h4>Update {{subcat.subcatName}}</h4>
+<div>
+  <form>
+    <div class="form-group">
+      <label class="sr-only" for="subcatName">Update its Name</label>
+      {{input value=subcatName id="subcatName" placeholder=subcat.subcatName class="form-control"}}
+    </div>
+    <button class="btn btn-success" {{action 'subcatUpdate' subcat}}>Update</button>
+  </form>
+</div>
+{{else}}
+<a {{action 'showSubcatForm'}}><i class="fa fa-pencil-square-o"></i></a>
+{{/if}}

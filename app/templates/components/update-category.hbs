@@ -4,8 +4,8 @@
       <form>
 
         <div class="form-group">
-          <label for="catName">Update Category Name</label>
-          {{input value=catName id="catName" placeholder=category.catName}}
+          <label class="sr-only" for="catName">Update Category Name</label>
+          {{input value=catName id="catName" placeholder=category.catName class="form-control"}}
         </div>
         <button class="btn btn-success" {{action 'update' category}}>Update</button>
       </form>

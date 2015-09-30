@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         catName: this.get('catName'),
         // subcat: this.get('subcat')
       };
-      this.set('addNewCategory', false),
+      this.set('addNewCategory', false)
       this.sendAction('save2', params);
     }
   }

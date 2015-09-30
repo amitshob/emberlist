@@ -1,0 +1,13 @@
+{{#if addNewSubcat}}
+<div>
+  <form>
+    <div class="form-group">
+      <label for="subcatName">New Subcategory</label>
+      {{input value=subcatName id="subcatName" class="form-control"}}
+    </div>
+    <button class="btn btn-success" {{action 'saveSubcat' category}}>Save</button>
+  </form>
+</div>
+{{else}}
+<a {{action 'subcatFormShow'}}><i class="fa fa-plus-square-o fa-2x"></i></a>
+{{/if}}
